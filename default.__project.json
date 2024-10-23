@@ -1,0 +1,14 @@
+{
+    "name": "n1b-vomitui",
+    "tree": {
+      "$className": "DataModel",
+  
+      "StarterPlayer": {
+        "StarterPlayerScripts": {
+          "Client": {
+            "$path": "src"
+          }
+        }
+      }
+    }
+  }
