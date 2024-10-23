@@ -64,7 +64,9 @@ local function CreateContext(name:string, _rootComponent:Component?, rootParent:
 
     local rootComponent = _rootComponent or ScreenGuiComponent;
     local rootElement = rootComponent:CreateElement();
-    if (rootElement.baseInstance) then rootElement.baseInstance.Parent = rootParent; end
+    if (rootElement.baseInstance) then
+        rootElement.baseInstance.Parent = rootParent;
+    end
     local rawElement = rootElement._raw;
     rawElement.context = contextProxy;
     rawElement.isRoot = true;
