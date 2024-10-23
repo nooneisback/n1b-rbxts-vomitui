@@ -24,13 +24,13 @@ export namespace React {
 	// create roblox element from component
 	function createElement<T extends Instance>(
 		comp:RobloxComponent<T>,
-		props: WritableInstanceProperties<T>,
+		props: OverrideProps<WritableInstanceProperties<T>, T>,
 		...children:GenericElement[]
 	):void;
 }
 
 // Stolen from rbxts/react
-type InstanceProps<T extends Instance> = Partial<WritableInstanceProperties<T>>;
+type InstanceProps<T extends Instance> = OverrideProps<WritableInstanceProperties<T>, T>;
 declare global {
 	namespace JSX {
 		interface IntrinsicElements {

@@ -1,6 +1,6 @@
 {
   "name": "@n1b/rbxts-vomitui",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "out/init.lua",
   "scripts": {
     "build": "rbxtsc",
